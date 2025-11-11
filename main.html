@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Khu vườn tình yêu - Eight Palace</title>
+ <link rel="stylesheet" href="style.css">
+ <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+ <!-- Liên kết đến file JavaScript mới --> <script src="hehe.js" defer></script> 
+</head>
+<body>
+ 
+ <!-- NAVBAR (Cố định ở trên cùng) --> <header class="navbar">
+  <div class="nav-left">
+   <span class="phone-icon">📞</span>
+   <a href="#">Liên Hệ</a>
+  </div>
+  <div class="nav-center">
+   <a href="#" class="logo">EIGHT PALACE</a>
+   
+  </div>
+  <div class="nav-right">
+   <a href="#">EN</a>
+   <a href="#">VI</a>
+   <a href="#">MENU</a>
+  </div>
+ </header>
+
+ <!-- NÚT ĐIỀU HƯỚNG (Cố định, chỉ dùng cho trượt ngang Hero) --> <button class="arrow left" onclick="goToPreviousPage()">
+  <img src="leftarrow.svg" alt="Left Arrow">
+ </button>
+ <button class="arrow right" onclick="goToNextPage()">
+  <img src="rightarrow.svg" alt="Right Arrow">
+ </button>
+
+ <!-- CONTAINER SLIDER CHỈ DÀNH CHO HERO (Trượt ngang) --> <div id="hero-slider">
+  <!-- SLIDE 1: HERO MỚI (EIGHT PALACE Giới Thiệu - Vị trí đầu tiên) --> <section class="hero hero-slide" id="hero-one">
+   <!-- VIDEO NỀN RIÊNG CHO HERO 1 -->  <video class="hero-video-bg" autoplay muted loop>
+    <source src="trangchu1.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ thẻ video.
+   </video>
+   <div class="overlay dark-overlay-video"></div>
+   <div class="hero-content main-hero-content">
+    <h1 class="main-title-hero">EIGHT PALACE</h1>
+    <p class="subtitle-hero">Giới Thiệu</p>
+   </div>
+  </section>
+
+  <!-- SLIDE 2: KHU VƯỜN TÌNH YÊU (Vị trí thứ hai) --> <section class="hero hero-slide" id="hero-two">
+   <!-- VIDEO NỀN RIÊNG CHO HERO 2 -->  <video class="hero-video-bg" autoplay muted loop>
+    <source src="khuvuontinhyeu.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ thẻ video.
+   </video>
+   <div class="overlay"></div>
+   <div class="hero-content">
+    <h1>Khu vườn<br>tình yêu</h1>
+    <p>
+     Hãy hình dung bạn đang bước vào một khu vườn tràn đầy cây, hoa, nắng, và tình yêu. 
+     Hẳn đó sẽ là một nơi tươi đẹp và rỡ ràng, nơi sẽ làm bạn muốn ghi dấu những 
+     khoảnh khắc hạnh phúc nhất đời mình.
+    </p>
+   </div>
+  </section>
+
+  <!-- SLIDE 3: HERO SLIDE 3 (Cặp đôi và pháo hoa - Ảnh tĩnh) --> <section class="hero hero-slide" id="hero-three">
+   <img src="trangchu3.jpg" alt="Cặp đôi bước xuống cầu thang với pháo hoa" class="hero-image-bg">
+   <div class="overlay dark-overlay"></div>
+   <div class="hero-content second-hero-content">
+    <p>
+     **Đến với Eight Palace, bạn sẽ được trải nghiệm những tiện**<br>
+     **nghi và dịch vụ tuyệt vời của một trong những Trung tâm Hội**<br>
+     **nghị - Tiệc cưới uy tín hàng đầu ở Việt Nam.**
+    </p>
+   </div>
+  </section>
+ </div>
+ <!-- KẾT THÚC CONTAINER TRƯỢT NGANG -->
+
+ <!-- CÁC SLIDE CÒN LẠI (Scroll dọc) --> 
+ <!-- SLIDE 4: GIỚI THIỆU CHUNG (Đã khôi phục) --> 
+ <section class="content-section" id="gioi-thieu-chung">
+  <div class="container">
+   <div class="intro-layout">
+    <div class="intro-text">
+     <h2 class="section-title">Giới Thiệu Chung</h2>
+     <div class="text-box">
+      <p>
+       Trung tâm Hội Nghị - Tiệc Cưới **Grand Palace** là địa điểm tổ chức tiệc cưới, hội
+       nghị và sự kiện trọn gói chuyên nghiệp uy tín bậc nhất TP HCM tọa lạc tại quận **Thủ Đức**. Grand Palace sở hữu 6 sảnh tiệc lớn phối hợp hoàn hảo cùng kiến trúc Châu Âu
+       sang trọng.
+      </p>
+      <a href="#" class="btn-read-more">Xem Thêm</a>
+     </div>
+    </div>
+    <div class="intro-image">
+     <img src="eight palace trang chủ.png" alt="Cặp đôi tại Eight Palace">
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- SLIDE 5: CÁC DỊCH VỤ NỔI BẬT --> <section class="content-section" id="cac-dich-vu">
+  <div class="container">
+   <h2 class="section-title services-title">Các Dịch Vụ Nổi Bật</h2>
+   <div class="services-grid">
+    <div class="service-item">
+     <img src="trangchutieccuoi.png" alt="Tiệc Cưới">
+     <div class="service-overlay">
+      <span class="service-name">TIỆC CƯỚI</span>
+     </div>
+    </div>
+    <div class="service-item">
+     <img src="trangchuhoinghi.jpg" alt="Hội Nghị">
+     <div class="service-overlay">
+      <span class="service-name">HỘI NGHỊ</span>
+     </div>
+    </div>
+    <div class="service-item">
+     <img src="trangchusukien.jpg" alt="Sự Kiện">
+     <div class="service-overlay">
+      <span class="service-name">SỰ KIỆN</span>
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- SLIDE 6: ƯU ĐÃI --> <section class="content-section" id="uu-dai">
+  <div class="container">
+   <div class="offer-layout">
+    <div class="offer-content">
+     <h2 class="section-title offer-title">Ưu đãi</h2>
+     <p class="offer-month">Tháng 10 Năm 2022</p>
+     <h3 class="offer-time">Thời gian diễn ra tiệc từ 21/10/2022<br>đến 31/12/2022</h3>
+     <a href="#" class="btn-read-more offer-btn">Xem Thêm</a>
+    </div>
+    <div class="offer-image-container">
+     <div class="image-box">
+      <img src="ảnh cưới.jpg" alt="Ảnh cặp đôi ưu đãi" class="offer-couple-img">
+     </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <!-- SLIDE 7: LIÊN HỆ VÀ ĐẶT HẸN --> <section class="content-section contact-form-section" id="lien-he">
+  <div class="container contact-container">
+   <h2 class="section-title form-title">LIÊN HỆ VÀ ĐẶT HẸN TƯ VẤN</h2>
+   <form class="consultation-form">
+    <div class="form-group">
+     <label for="full-name">HỌ TÊN*</label>
+     <input type="text" id="full-name" name="full-name" required>
+    </div>
+    <div class="form-group">
+     <label for="phone">ĐIỆN THOẠI*</label>
+     <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+     <label for="email">EMAIL*</label>
+     <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+     <label for="event-type">LOẠI HÌNH SỰ KIỆN</label>
+     <select id="event-type" name="event-type">
+      <option value="">Vui lòng chọn</option>
+      <option value="wedding">Tiệc Cưới</option>
+      <option value="conference">Hội Nghị</option>
+      <option value="event">Sự Kiện</option>
+     </select>
+    </div>
+    <div class="form-group">
+     <label for="guests">SỐ LƯỢNG KHÁCH</label>
+     <input type="number" id="guests" name="guests">
+    </div>
+    <div class="form-group">
+     <label for="time">THỜI GIAN TỔ CHỨC</label>
+     <input type="text" id="time" name="time">
+    </div>
+    <div class="form-group">
+     <label for="note">GHI CHÚ</label>
+     <input type="text" id="note" name="note">
+    </div>
+    <button type="submit" class="submit-button">GỬI LỊCH HẸN</button>
+   </form>
+  </div>
+ </section>
+
+ <!-- SLIDE 8: FOOTER (Thông tin Liên hệ/Bản đồ) --> <footer class="site-footer final-footer" id="footer-contact">
+  <div class="container footer-container">
+   <div class="footer-left">
+    <p class="footer-logo">EIGHT PALACE</p>
+    <div class="contact-info">
+     <div class="info-item">
+      <span class="icon">📍</span> 
+      <p>
+       TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN<br>
+       Xa Lộ Hà Nội, Phường Linh Trung,<br>
+       Thủ Đức, TP. Hồ Chí Minh
+      </p>
+     </div>
+     <div class="info-item">
+      <span class="icon">📞</span>
+      <p>(028) 3726 7477<br>
+       <span>0901 462 768</span>
+      </p>
+     </div>
+     <div class="info-item">
+      <span class="icon">✉️</span>
+      <p>event@eightpalace.com.vn</p>
+     </div>
+    </div>
+    <div class="social-icons">
+     <a href="#"><img src="insta.webp" alt="Instagram"></a>
+     <a href="#"><img src="twitter.webp" alt="Twitter"></a>
+     <a href="#"><img src="facebook.webp" alt="Facebook"></a>
+     <a href="#"><img src="yt.jpg" alt="Youtube"></a>
+    </div>
+   </div>
+   <div class="footer-right">
+    <img src="locate.avif" alt="Bản đồ vị trí Eight Palace" class="map-image">
+   </div>
+  </div>
+ </footer>
+
+</body>
+</html>
