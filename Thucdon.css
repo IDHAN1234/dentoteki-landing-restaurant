@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*--- NAVBAR & HEADER --- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: #c79c36;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phone-icon {
+  font-size: 18px;
+}
+
+.nav-center .logo {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.nav-right a {
+  font-size: 14px;
+}
+
+/* Giới thiệu */
+.gioiThieu {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.hinhGt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.vanGt {
+  text-align: left;
+  padding: 0 70px;
+  transform: translateY(-70px);
+}
+
+.vanGt h1 {
+  font-size: 50px;
+  font-weight: 600;
+  max-width: 400px;
+}
+
+/* THỰC ĐƠN */
+.thucDon {
+  padding: 80px 40px;
+  background: #d5ca6f;
+  max-width: 1200px;
+  margin: 80px auto;
+  border-radius: 10px;
+}
+
+.thucDon h2 {
+  font-size: 30px;
+  color: #5a4b1c;
+  margin-bottom: 40px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.thucDonNd {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mon {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.mon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.22);
+}
+
+.mon img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.mon-content {
+  flex: 1;
+}
+
+.mon h3 {
+  font-size: 22px;
+  color: #5b420f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.mon .gia {
+  font-size: 18px;
+  color: #c79c36;
+  font-weight: 700;
+}
+
+/* FOOTER */
+.final-footer {
+  background-color: #f0f0e8;
+  padding: 60px 0;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-left {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.footer-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #b18e5e;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.contact-info .icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #b18e5e;
+}
+
+.contact-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-info p span {
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(30%) sepia(10%) saturate(10%) hue-rotate(300deg) brightness(90%) contrast(90%);
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .gioiThieu {
+    padding: 0 30px;
+    height: 60vh;
+  }
+
+  .vanGt h1 {
+    font-size: 32px;
+  }
+
+  .thucDon {
+    padding: 40px 20px;
+    margin: 40px auto;
+  }
+  
+  .mon {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .mon img {
+    width: 100%;
+    height: 200px;
+  }
+}
