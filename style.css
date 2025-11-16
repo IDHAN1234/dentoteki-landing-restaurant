@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*--- NAVBAR & HEADER --- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: #c79c36;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phone-icon {
+  font-size: 18px;
+}
+
+.nav-center .logo {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.nav-right a {
+  font-size: 14px;
+}
+
+/* Giới thiệu */
+.gioiThieu {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(247, 247, 247);
+}
+
+.hinhGt {
+  position: absolute;
+  filter: brightness(0.5), contrast(1.3);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.vanGt {
+  text-align: center;
+  padding: 0 70px;
+  transform: translateY(-70px);
+}
+
+.vanGt h1 {
+  font-size: 50px;
+  font-weight: 600;
+  max-width: 400px;
+}
+
+/* Sảnh tiệc, trang trí, thực đơn */
+
+.thucDon,
+.trangTri,
+.sanhTiec {
+  padding: 40px 40px;
+  background: #f0e580;
+  max-width: 1200px;
+  margin: 40px auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.thucDonNd,
+.trangTriNd,
+.sanhTiecNd {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  background:#ffffff;
+  gap: 40px;
+}
+
+.hinhTd,
+.hinhTt,
+.hinhSt {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hinhTd img,
+.hinhTt img,
+.hinhSt img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+.vanTd,
+.vanTt,
+.vanSt {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 50px;
+}
+
+.vanTd h2,
+.vanTt h2,
+.vanSt h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.vanTd p,
+.vanTt p,
+.vanSt p {
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* xem thêm */
+.nut {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1.5px solid #c79c36;
+  color: #c79c36;
+  text-decoration: none;
+  transition: 0.3s;
+  border-radius: 4px;
+}
+
+.nut:hover {
+  background: #c79c36;
+  color: #fff;
+}
+
+/* --- 8. LIÊN HỆ (SECTION 7) --- */
+.contact-form-section {
+  background-color: #f8f5d5;
+  /* Màu nền xanh nhạt cho form */
+  padding: 80px 0;
+  color: #333;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: #b18e5e;
+  /* Màu vàng nâu */
+  margin-bottom: 40px;
+}
+
+.consultation-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 calc(25% - 15px);
+  min-width: 180px;
+}
+
+.form-group:nth-child(-n+4) {
+  width: calc(25% - 20px);
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #333;
+}
+
+.form-group select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path fill="%23333" d="M0 0l5 6 5-6z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
+
+.submit-button {
+  display: block;
+  width: 250px;
+  margin: 20px auto 0;
+  padding: 12px 30px;
+  background-color: #cec270;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #dfb939;
+}
+
+/* --- 9. FINAL FOOTER (SECTION 8) --- */
+.final-footer {
+  background-color: #f0f0e8;
+  padding: 60px 0;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-left {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.footer-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #b18e5e;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.contact-info .icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #b18e5e;
+}
+
+.contact-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-info p span {
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(30%) sepia(10%) saturate(10%) hue-rotate(300deg) brightness(90%) contrast(90%);
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+
+/* RESPONSIVE */
+/* --- TABLET (768px) --- */
+
+@media (min-width: 768px) {
+
+  /* Chuyển sang layout 2 cột */
+  .thucDonNd,
+  .trangTriNd,
+  .sanhTiengNd {
+    flex-direction: row;
+    /* Xếp hàng ngang */
+    gap: 50px;
+    /* Trả lại gap lớn */
+    text-align: left;
+    /* Trả lại căn lề trái */
+  }
+
+  /* Thêm lại padding-left cho cột chữ */
+  .vanTd,
+  .vanTt,
+  .vanSt {
+    padding-left: 30px;
+  }
+
+}
