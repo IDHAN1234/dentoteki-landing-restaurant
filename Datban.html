@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Đặt Bàn Tiệc – Eight Palace</title>
+    <link rel="stylesheet" href="Datban.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <span class="phone-icon">📞</span>
+            <a href="#">Liên Hệ</a>
+        </div>
+        <div class="nav-center">
+            <a href="#" class="logo">EIGHT PALACE</a>
+        </div>
+        <div class="nav-right">
+            <a href="#">EN</a>
+            <a href="#">VI</a>
+            <a href="#">MENU</a>
+        </div>
+    </header>
+
+    <!-- BANNER -->
+    <section class="gioiThieu">
+        <img src="giới thiệu.webp" alt="Đặt bàn tiệc" class="hinhGt">
+        <div class="vanGt">
+            <h1>Đặt Bàn Tiệc Cưới</h1>
+        </div>
+    </section>
+
+    <!-- FORM ĐẶT BÀN VÀ CHỌN BÀI TRÍ -->
+    <section class="datBan">
+        <div class="datBan-container">
+            <!-- FORM ĐẶT BÀN -->
+            <div class="form-section">
+                <h2>Liên Hệ Đặt Tiệc</h2>
+                
+                <form class="formDatBan">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="soDienThoai">Số Điện Thoại</label>
+                            <input type="tel" id="soDienThoai" name="soDienThoai" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="soLuongBan">Số Lượng Bàn</label>
+                            <input type="number" id="soLuongBan" name="soLuongBan" min="1" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ngaySuKien">Ngày Tổ Chức</label>
+                            <input type="date" id="ngaySuKien" name="ngaySuKien" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Địa Chỉ Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tenBan">Họ và Tên</label>
+                            <input type="text" id="tenBan" name="tenBan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="soKhach">Số Khách Dự Tính</label>
+                            <input type="number" id="soKhach" name="soKhach" min="1" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="ghiChu">Ghi Chú Thêm</label>
+                        <textarea id="ghiChu" name="ghiChu" rows="4"></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <!-- CHỌN CÁCH BÀI TRÍ BÀN TIỆC -->
+            <div class="baiTri-section">
+                <h2>Chọn Cách Bài Trí Bàn Tiệc</h2>
+                <p class="baiTri-mo-ta">Chọn một trong các cách bài trí dưới đây cho bàn tiệc của bạn</p>
+                
+                <div class="baiTri-danhSach">
+                    <div class="baiTri-item">
+                        <img src="Trang trí bàn tiệc 1.jpg" alt="Bài trí bàn tiệc 1">
+                        <div class="baiTri-content">
+                            <h3>Bài Trí 1</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="baiTri-item">
+                        <img src="Trang trí bàn tiệc 2.jpg" alt="Bài trí bàn tiệc 2">
+                        <div class="baiTri-content">
+                            <h3>Bài Trí 2</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="baiTri-item">
+                        <img src="Trang trí bàn tiệc 3.jpeg" alt="Bài trí bàn tiệc 3">
+                        <div class="baiTri-content">
+                            <h3>Bài Trí 3</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="baiTri-item">
+                        <img src="Trang trí bàn tiệc 4.jpg" alt="Bài trí bàn tiệc 4">
+                        <div class="baiTri-content">
+                            <h3>Bài Trí 4</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NÚT GỬI YÊU CẦU -->
+        <div class="submit-section">
+            <button type="submit" class="btn-submit">Gửi Yêu Cầu Đặt Tiệc</button>
+        </div>
+    </section>
+
+    <footer class="site-footer final-footer" id="footer-contact">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p class="footer-logo">EIGHT PALACE</p>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <p>
+                            TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN<br>
+                            Xa Lộ Hà Nội, Phường Linh Trung,<br>
+                            Thủ Đức, TP. Hồ Chí Minh
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <p>(028) 3726 7477<br>
+                            <span>0901 462 768</span>
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <p>event@eightpalace.com.vn</p>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="insta.webp" alt="Instagram"></a>
+                    <a href="#"><img src="twitter.webp" alt="Twitter"></a>
+                    <a href="#"><img src="facebook.webp" alt="Facebook"></a>
+                    <a href="#"><img src="yt.jpg" alt="Youtube"></a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <img src="locate.avif" alt="Bản đồ vị trí Eight Palace" class="map-image">
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

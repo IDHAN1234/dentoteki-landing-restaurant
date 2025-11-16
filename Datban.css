@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/*--- NAVBAR & HEADER --- */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+  z-index: 100;
+  transition: background-color 0.3s;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.navbar a:hover {
+  color: #c79c36;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phone-icon {
+  font-size: 18px;
+}
+
+.nav-center .logo {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.nav-right a {
+  font-size: 14px;
+}
+
+/* Giới thiệu */
+.gioiThieu {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+}
+
+.hinhGt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.vanGt {
+  text-align: left;
+  padding: 0 70px;
+  transform: translateY(-70px);
+}
+
+.vanGt h1 {
+  font-size: 50px;
+  font-weight: 600;
+  max-width: 400px;
+}
+
+/* FORM ĐẶT BÀN VÀ CHỌN BÀI TRÍ */
+.datBan {
+  padding: 80px 40px;
+  background: #d5ca6f;
+  max-width: 1200px;
+  margin: 80px auto;
+  border-radius: 10px;
+}
+
+.datBan-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+}
+
+/* FORM ĐẶT BÀN */
+.form-section h2 {
+  font-size: 30px;
+  color: #5a4b1c;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.formDatBan {
+  margin-bottom: 40px;
+}
+
+.form-row {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group label {
+  font-size: 16px;
+  color: #5a4b1c;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #c79c36;
+}
+
+/* CHỌN BÀI TRÍ BÀN TIỆC */
+.baiTri-section {
+  border-top: 2px solid #f0f0f0;
+  padding-top: 40px;
+}
+
+.baiTri-section h2 {
+  font-size: 30px;
+  color: #5a4b1c;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.baiTri-mo-ta {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #666;
+  font-size: 18px;
+}
+
+.baiTri-danhSach {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.baiTri-item {
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.baiTri-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.baiTri-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.baiTri-content {
+  padding: 20px;
+}
+
+.baiTri-content h3 {
+  font-size: 20px;
+  color: #5b420f;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.baiTri-content p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* NÚT GỬI YÊU CẦU */
+.submit-section {
+  text-align: center;
+}
+
+.btn-submit {
+  background-color: #c79c36;
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.btn-submit:hover {
+  background-color: #b18e30;
+}
+
+/* FOOTER */
+.final-footer {
+  background-color: #f0f0e8;
+  padding: 60px 0;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-left {
+  flex: 1;
+  padding-right: 30px;
+}
+
+.footer-logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 24px;
+  color: #b18e5e;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+
+.contact-info .info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.contact-info .icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #b18e5e;
+}
+
+.contact-info p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact-info p span {
+  font-weight: 700;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: invert(30%) sepia(10%) saturate(10%) hue-rotate(300deg) brightness(90%) contrast(90%);
+}
+
+.footer-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.map-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 1px solid #ddd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .gioiThieu {
+    padding: 0 30px;
+    height: 60vh;
+  }
+
+  .vanGt h1 {
+    font-size: 32px;
+  }
+
+  .datBan {
+    padding: 40px 20px;
+    margin: 40px auto;
+  }
+  
+  .datBan-container {
+    padding: 20px;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .baiTri-danhSach {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+  }
+  
+  .footer-right {
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+}
