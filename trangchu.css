@@ -8,10 +8,9 @@
 body {
  font-family: 'Quicksand', sans-serif;
  color: #fff;
- /* QUAN TRỌNG: Cho phép cuộn dọc cho toàn bộ trang */
  overflow-x: hidden;
  overflow-y: scroll; 
- scroll-snap-type: y proximity; /* Scroll snap nhẹ cho các section dưới */
+ scroll-snap-type: y proximity; 
 }
 
 /* --- 2. Cấu trúc TRƯỢT NGANG (Chỉ cho 3 Hero đầu) --- */
@@ -19,25 +18,23 @@ body {
  width: 100vw;
  height: 100vh;
  display: flex;
- flex-direction: row; /* Các slide xếp hàng ngang */
- transition: transform 0.6s ease-in-out; /* Hiệu ứng trượt */
+ flex-direction: row; 
+ transition: transform 0.6s ease-in-out; 
  will-change: transform;
 }
 
 .hero {
- /* Hero slide (bên trong slider) phải chiếm 100% viewport ngang và dọc */
  width: 100vw; 
  height: 100vh; 
- flex-shrink: 0; /* Ngăn co lại */
+ flex-shrink: 0; 
  position: relative;
  z-index: 10; 
  display: flex; 
  align-items: center;
  justify-content: center;
- overflow: hidden; /* Quan trọng để video không tràn ra ngoài */
+ overflow: hidden; 
 }
 
-/* Định kiểu cho VIDEO NỀN CỦA TỪNG HERO SLIDE */
 .hero-video-bg {
  position: absolute;
  top: 0;
@@ -45,15 +42,14 @@ body {
  width: 100%;
  height: 100%;
  object-fit: cover;
- z-index: -1; /* Đảm bảo nó nằm dưới nội dung */
+ z-index: -1; 
 }
 
 /* --- 3. CÁC SECTION NỘI DUNG CÒN LẠI (Cuộn dọc) --- */
 .content-section, .site-footer {
- width: 100%; /* Chiếm 100% chiều rộng */
- min-height: 100vh; /* Chiếm tối thiểu 100% chiều cao */
- padding: 100px 0; /* Thêm padding vì không còn là full-page slide */
- /* Tắt các thuộc tính trượt toàn trang cũ */
+ width: 100%; 
+ min-height: 100vh; 
+ padding: 100px 0; 
  flex-shrink: unset;
  scroll-snap-align: start; 
  position: relative;
@@ -65,10 +61,8 @@ body {
 
 /* --- 4. NAVBAR, ARROWS & HERO STYLES (Giữ nguyên) --- */
 
-/* Loại bỏ height: 100vh và scroll-snap-align khỏi class chung */
 .hero, .content-section, .site-footer {
- /* Đã chuyển định nghĩa lên trên */
- display: flex; /* Đảm bảo căn giữa hoạt động */
+ display: flex; 
  align-items: center;
  justify-content: center;
 }
@@ -113,8 +107,6 @@ body {
 .nav-right a {
  font-size: 14px;
 }
-
-/* --- VIDEO BACKGROUND (Global cũ đã bị loại bỏ) --- */
 
 
 .footer-icons {
@@ -173,12 +165,10 @@ body {
 }
 
 .dark-overlay {
- /* Lớp phủ cho Hero 3 (ảnh tĩnh) */
  background: rgba(0, 0, 0, 0.45); 
 }
 
 .dark-overlay-video {
- /* Lớp phủ tối cho Hero có video */
  background: rgba(0, 0, 0, 0.5); 
 }
 
@@ -189,7 +179,7 @@ body {
  padding: 0 20px;
 }
 
-/* Phong cách Hero 2 (Khu vườn tình yêu) */
+/* Hero 2 */
 .hero-content h1 {
  font-family: 'Pacifico', cursive;
  font-size: 64px;
@@ -207,7 +197,7 @@ body {
  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
-/* Phong cách riêng cho HERO SLIDE 1 MỚI */
+/*  HERO SLIDE 1  */
 .main-hero-content {
  max-width: 800px;
 }
@@ -233,7 +223,7 @@ body {
 }
 
 
-/* Phong cách riêng cho HERO SLIDE 3 (Ảnh tĩnh) */
+/*  HERO SLIDE 3  */
 #hero-three {
  background-color: #000;
 }
@@ -485,7 +475,7 @@ body {
 
 /* --- 8. LIÊN HỆ (SECTION 7) --- */
 .contact-form-section {
- background-color: #e5f6ff; /* Màu nền xanh nhạt cho form */
+ background-color: #ffffff; 
  padding: 80px 0;
  color: #333;
 }
@@ -494,7 +484,7 @@ body {
  text-align: center;
  font-size: 24px;
  font-weight: 600;
- color: #b18e5e; /* Màu vàng nâu */
+ color: #b18e5e; 
  margin-bottom: 40px;
 }
 
@@ -521,18 +511,18 @@ body {
  font-size: 13px;
  font-weight: 600;
  margin-bottom: 8px;
- color: #555; 
+ color: #000000; 
 }
 
 .form-group input,
 .form-group select {
  width: 100%;
  padding: 10px;
- border: 1px solid #ccc;
+ border: 2px solid #aeb844;
  border-radius: 0;
  background-color: #ffffff;
  font-size: 14px;
- color: #333;
+ color: #000000;
 }
 
 .form-group select {

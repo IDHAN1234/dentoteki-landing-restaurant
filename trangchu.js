@@ -17,23 +17,20 @@ function scrollToPage(direction) {
     } else if (direction === 'previous' && currentHeroIndex > 0) {
         nextIndex--;
     } else if (direction === 'next' && currentHeroIndex === totalHeroPages - 1) {
-        // Nếu ở cuối Hero slider và cuộn tiếp, cuộn xuống Giới thiệu chung
         document.getElementById('gioi-thieu-chung').scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
-        return; // Dừng hàm, không trượt ngang nữa
+        return; 
     } else {
-        return; // Dừng hàm nếu không có gì để trượt
+        return; 
     }
     
     currentHeroIndex = nextIndex;
 
-    // Áp dụng transform để trượt ngang container Hero
-    const offset = currentHeroIndex * -100; // -100% cho mỗi slide
+    const offset = currentHeroIndex * -100; 
     heroSlider.style.transform = `translateX(${offset}vw)`;
     
-    // Cập nhật trạng thái hiển thị và phát của video nền
     updateVideoBackground();
 }
 
@@ -64,20 +61,16 @@ function updateVideoBackground() {
 document.addEventListener('DOMContentLoaded', () => {
     heroSlider = document.getElementById('hero-slider');
     
-    // Khởi tạo ở trang Hero đầu tiên và cập nhật video
     currentHeroIndex = 0;
     updateVideoBackground();
     
-    // Thêm lắng nghe sự kiện cuộn chuột để điều hướng Hero slider
     window.addEventListener('wheel', (e) => {
         const heroSliderRect = heroSlider.getBoundingClientRect();
         
-        // Kiểm tra xem Hero Slider có đang nằm trong viewport chính không
         if (heroSliderRect.top > window.innerHeight || heroSliderRect.bottom < 0) {
             return;
         }
 
-        // Nếu người dùng đang cuộn trong khu vực Hero slider
         
         // Xử lý cuộn ngang (trên trackpad hoặc magic mouse)
         if (Math.abs(e.deltaX) > 10) {
@@ -86,9 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } 
         // Xử lý cuộn dọc khi đang ở Hero slider
         else if (Math.abs(e.deltaY) > 20) {
-            // Cuộn xuống
             if (e.deltaY > 0) {
-                // Nếu đang ở Hero cuối cùng, cho phép cuộn xuống phần nội dung dưới
                 if (currentHeroIndex === totalHeroPages - 1) {
                     return; 
                 } else {
@@ -96,9 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     scrollToPage('next');
                 }
             } 
-            // Cuộn lên
-            else { // e.deltaY < 0
-                // Nếu đang ở Hero đầu tiên, không làm gì
+            else { 
                 if (currentHeroIndex === 0) {
                     return; 
                 } else {
