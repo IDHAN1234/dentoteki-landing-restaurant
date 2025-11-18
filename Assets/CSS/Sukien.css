@@ -166,7 +166,6 @@ body {
 /* --- 8. LIÊN HỆ (SECTION 7) --- */
 .contact-form-section {
   background-color: #ffffff;
-  /* Màu nền xanh nhạt cho form */
   padding: 80px 0;
   color: #333;
 }
@@ -176,7 +175,6 @@ body {
   font-size: 24px;
   font-weight: 600;
   color: #b18e5e;
-  /* Màu vàng nâu */
   margin-bottom: 40px;
 }
 
@@ -203,18 +201,18 @@ body {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #555;
+  color: #000000;
 }
 
 .form-group input,
 .form-group select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 2px solid #aeb844;
   border-radius: 0;
   background-color: #ffffff;
   font-size: 14px;
-  color: #333;
+  color: #000000;
 }
 
 .form-group select {
@@ -231,7 +229,7 @@ body {
   width: 250px;
   margin: 20px auto 0;
   padding: 12px 30px;
-  background-color: #cec270;
+  background-color: #c9e49c;
   color: #333;
   border: none;
   cursor: pointer;
@@ -243,7 +241,7 @@ body {
 }
 
 .submit-button:hover {
-  background-color: #dfb939;
+  background-color: #a8cd7a;
 }
 
 /* --- 9. FINAL FOOTER (SECTION 8) --- */

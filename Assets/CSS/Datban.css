@@ -43,6 +43,12 @@ body {
   gap: 8px;
 }
 
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
 .phone-icon {
   font-size: 18px;
 }
@@ -54,6 +60,90 @@ body {
 
 .nav-right a {
   font-size: 14px;
+}
+
+/*THIẾT LẬP MENU DROP-DOWN */
+
+.menu-item-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Kỹ thuật căn giữa tuyệt đối */
+    width: 650px;
+    background-color: #fcfcfc;
+    border: 2px solid #fff3cd;
+    z-index: 10;
+    justify-content: space-around;
+    padding: 30px;
+    align-items: center;
+}
+
+/* ĐỊNH KIỂU 2 CỘT */
+/* Cột 1: Menu */
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-right: 30px;
+    border-right: 2px solid #fff3cd;
+}
+
+/* CÁC MỤC MENU*/
+
+.footer-nav .nav-item {
+
+    width: 150px;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    border-bottom: 2px solid #fff3cd;
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.footer-info {
+    color: #333333;
+    /* Áp dụng màu xám đậm cho tất cả văn bản */
+    line-height: 1.6;
+    /* Tăng khoảng cách dòng cho dễ thở */
+    padding-left: 30px;
+}
+
+.footer-info .icon {
+    color: #b18e5e;
+    /* Giữ lại màu nhấn cho icon */
+    margin-right: 8px;
+    /* Thêm khoảng cách nhỏ */
+}
+
+.social-links,
+.social-icons {
+    display: flex;
+    gap: 15px;
+    /* Khoảng cách giữa các icon */
+    margin-top: 20px;
+    /* Khoảng cách với nội dung bên trên */
+}
+
+.social-links img,
+.social-icons img {
+    width: 24px;
+    /* Kích thước tiêu chuẩn, nhỏ gọn */
+    height: 24px;
+    /* Đảm bảo icon hình vuông */
+    object-fit: contain;
+    /* Đảm bảo icon không bị méo/vỡ */
 }
 
 /* Giới thiệu */
